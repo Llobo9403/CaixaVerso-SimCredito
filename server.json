@@ -1,0 +1,8 @@
+{
+    "account":  {
+        "accountId": 1234567890,
+        "agency": 1234,
+        "username": "CaixaVerso",
+        "cpf" : "123.456.789-01"
+    }
+}   

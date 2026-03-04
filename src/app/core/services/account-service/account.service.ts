@@ -32,4 +32,15 @@ export class AccountService {
   deleteHistory(id: any){
     return this.http.delete(`${this.apiUrl}/history/${id}`)
   }
+
+  mapHttpError(err: any): string {
+    if (err?.status === 0) return 'Serviço indisponível';
+    if (err?.status === 400) return 'Dados inválidos';
+    if (err?.status === 403) return 'Ação não autorizada';
+    if (err?.status === 404) return 'Pãgina não encontrada';
+    if (err?.status === 422) return 'Nenhum produto compatível para os parâmetros informados';
+    if (err?.status >= 500) return 'Serviço indisponível';
+    
+    return 'Erro inesperado';
+  }
 }

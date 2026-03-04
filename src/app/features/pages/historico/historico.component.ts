@@ -51,6 +51,9 @@ export class HistoricoComponent implements OnInit{
         new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
       );
         this.dataSource = new MatTableDataSource(response);
+      }, 
+      error: (err)=>{
+        alert(this._accountService.mapHttpError(err));
       }
     })
   }
@@ -69,6 +72,9 @@ export class HistoricoComponent implements OnInit{
           if (this.dataSource?.data) {
             this.dataSource.data = [...this.dataSource.data];
           }
+        },
+        error: (err)=>{
+          alert(this._accountService.mapHttpError(err));
         }
       });
     });
@@ -78,6 +84,10 @@ export class HistoricoComponent implements OnInit{
     this._accountService.deleteHistory(register.id).subscribe({
       next: (response)=>{
         this.getHistorico()
+      },
+      error: (err)=>{
+        alert(this._accountService.mapHttpError(err));
+
       }
     })
   }

@@ -51,6 +51,19 @@
       "risk": "BAIXO",
       "profitability": 12.89,
       "notes": null
+    },
+    {
+      "id": "5231d83a-038c-4cac-958f-d8d4b65db1fa",
+      "createdAt": "2026-03-04T13:48:51.267Z",
+      "clientId": "1234",
+      "productType": "LCI",
+      "termMonths": 12,
+      "initial": 30000,
+      "income": 3747.75,
+      "total": 33747.75,
+      "risk": "BAIXO",
+      "profitability": 12.49,
+      "notes": null
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

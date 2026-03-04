@@ -116,7 +116,7 @@ export class SimularComponent implements OnInit {
         this.products = response;
       },
       error: (err) => {
-
+        alert(this._accountService.mapHttpError(err));
       }
     })
   }

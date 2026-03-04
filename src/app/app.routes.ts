@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { SimularComponent } from './pages/simular/simular.component';
-import { HistoricoComponent } from './pages/historico/historico.component';
+import { SimularComponent } from './features/pages/simular/simular.component';
+import { HistoricoComponent } from './features/pages/historico/historico.component';
 
 export const routes: Routes = [
     {

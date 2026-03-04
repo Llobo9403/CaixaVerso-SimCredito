@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>Resultado da Simulação</h2>
+
+<mat-dialog-content>
+
+  <p><strong>Cliente:</strong> {{data.clientId}}</p>
+  <p><strong>Produto:</strong> {{data.productType}}</p>
+  <p><strong>Prazo:</strong> {{data.termMonths}} meses</p>
+
+  <hr>
+
+  <p><strong>Investido:</strong> {{invested | currency:'BRL'}}</p>
+  <p><strong>Rendimento:</strong> {{data.income | currency:'BRL'}}</p>
+  <p><strong>Total:</strong> {{data.total | currency:'BRL'}}</p>
+
+  <hr>
+
+  <p><strong>Rentabilidade:</strong> {{data.profitability}} % a.a</p>
+  <p><strong>Risco:</strong> {{data.risk}}</p>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close routerLink="/historico">Fechar</button>
+</mat-dialog-actions>

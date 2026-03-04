@@ -1,8 +1,57 @@
 {
-    "account":  {
-        "accountId": 1234567890,
-        "agency": 1234,
-        "username": "CaixaVerso",
-        "cpf" : "123.456.789-01"
+  "account": [
+    {
+      "accountId": 1234,
+      "username": "CaixaVerso",
+      "avgIncome": 5000,
+      "score": 890,
+      "id": "ba0b"
     }
-}   
+  ],
+  "products": [
+    {
+      "value": "CDB",
+      "viewValue": "CDB",
+      "id": "5620"
+    },
+    {
+      "value": "LCI",
+      "viewValue": "LCI",
+      "id": "da05"
+    },
+    {
+      "value": "LCA",
+      "viewValue": "LCA",
+      "id": "8a6f"
+    }
+  ],
+  "history": [
+    {
+      "id": "f59777d3-6788-48a0-a0e3-4e90f09d17db",
+      "createdAt": "2026-03-04T08:37:32.830Z",
+      "clientId": "1234",
+      "productType": "CDB",
+      "termMonths": 36,
+      "initial": 10000,
+      "income": 4997.47,
+      "total": 14997.47,
+      "risk": "BAIXO",
+      "profitability": 14.47,
+      "notes": "Teste"
+    },
+    {
+      "id": "eac4d330-fc76-47dc-b16c-9188fefb7139",
+      "createdAt": "2026-03-04T11:41:40.046Z",
+      "clientId": "1234",
+      "productType": "LCA",
+      "termMonths": 36,
+      "initial": 12000,
+      "income": 5262.87,
+      "total": 17262.87,
+      "risk": "BAIXO",
+      "profitability": 12.89,
+      "notes": null
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
